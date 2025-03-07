@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev board</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="poppins-regular bg-blue-50">
+    <!-- layout design -->
+    <div
+      class="grid grid-cols-[1010px_240px] grid-rows-[auto_1fr] gap-4 w-[1250px] mx-auto"
+    >
+      <!-- Full-width header spanning both columns -->
+      <div class="col-span-2">
+        <!-- heading -->
+        <header class="mt-5">
+          <!-- navbar -->
+          <nav
+            class="flex justify-between items-center bg-white h-20 p-5 rounded-2xl"
+          >
+            <div class="logo flex justify-center items-center gap-3">
+              <div class="w-12">
+                <img src="./assets/logo.png" alt="" />
+              </div>
+              <h1 class="text-3xl text-[#00303C]">
+                Dev<span class="font-bold">Board</span>
+              </h1>
+            </div>
+
+            <div class="flex justify-center items-center gap-9">
+              <div
+                class="flex justify-center items-center gap-3 bg-[#F4F7FF] px-4 py-2 rounded-4xl"
+              >
+                <img class="w-auto h-auto" src="./assets/checkbox.png" alt="" />
+                <h1 class="text-2xl font-bold text-[#00303C]">23</h1>
+              </div>
+              <div class="bg-[#F4F7FF] px-3 py-3 rounded-full">
+                <img
+                  class="w-auto h-auto"
+                  src="./assets/theme-btn.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <!-- main section -->
+      <div class="row-span-4">
+        <!-- main -->
+        <section class="max-width-[100px] bg-white mt-2 p-7 rounded-2xl mb-10">
+          <!-- main section header -->
+
+          <div class="main-header flex justify-between items-center">
+            <div
+              class="check-box-card flex justify-center items-center p-2 gap-5 w-52 h-24 bg-[#F4F7FF] rounded-2xl"
+            >
+              <div class="bg-white px-3 py-3 rounded-full">
+                <img src="./assets/checkbox.png" alt="" />
+              </div>
+              <div class="task">
+                <small class="text-[#00303C]">Task Assigned</small>
+                <h1 class="font-bold text-2xl text-[#00303C]">05</h1>
+              </div>
+            </div>
+
+            <a href=""
+              class="discover-card flex justify-start items-center p-10 gap-5 w-[500px] h-24 bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-2xl"
+            >
+              <div class="">
+                <img src="./assets/board.png" alt="" />
+              </div>
+              <div class="card-text">
+                <h1 class="text-xl text-white">
+                  Discover Something <br />
+                  New Today!
+                </h1>
+              </div>
+            </a>
+            <div
+              class="check-box flex justify-center items-center p-2 gap-5 w-52 h-24 bg-[#F4F7FF] rounded-2xl"
+            >
+              <div class="bg-white px-3 py-3 rounded-full">
+                <img src="./assets/calender.png" alt="" />
+              </div>
+              <div class="task">
+                <h1 class="text-xl text-[#00303C]">
+                  Wed , <br />
+                  <span class="font-bold"> Jul 28 2025</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <!-- main section card -->
+
+          <div class="grid grid-cols-3 gap-8 mt-10">
+            <div class="m-card bg-[#F4F7FF] p-5 rounded-2xl  ">
+
+                <div class="card-details flex flex-col gap-3">
+                 <small class="bg-white px-2 py-1 w-20 rounded-sm">ShopEase</small>
+                 <h2 class="font-bold text-xl text-[#00303C]">Fix Mobile Button Issue </h2>
+               <div class="bg-white px-4 py-3 rounded-sm text-start">
+                <p class="text-sm text-[#808384] ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properlyand ensure onClick works properly</p>
+               </div>
+                </div>
+     
+                <div class="card-bottom flex justify-between items-center mt-5">
+                 <div class="date">
+                     <small class="text-[#00303C]">Deadline</small>
+                     <p class="font-semibold text-[#00303C] text-sm">21 March 2025</p>
+                 </div>
+
+                 <div class="btn-com">
+                    <button class="bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer text-lg">Completed</button>
+                 </div>
+                </div>
+     
+                 </div>
+
+                 
+            <div class="m-card bg-[#F4F7FF] p-5 rounded-2xl  ">
+
+                <div class="card-details flex flex-col gap-3">
+                 <small class="bg-white px-2 py-1 w-20 rounded-sm">ShopEase</small>
+                 <h2 class="font-bold text-xl text-[#00303C]">Fix Mobile Button Issue </h2>
+               <div class="bg-white px-4 py-3 rounded-sm text-start">
+                <p class="text-sm text-[#808384] ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properlyand ensure onClick works properly</p>
+               </div>
+                </div>
+     
+                <div class="card-bottom flex justify-between items-center mt-5">
+                 <div class="date">
+                     <small class="text-[#00303C]">Deadline</small>
+                     <p class="font-semibold text-[#00303C] text-sm">21 March 2025</p>
+                 </div>
+
+                 <div class="btn-com">
+                    <button class="bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer text-lg">Completed</button>
+                 </div>
+                </div>
+     
+                 </div>
+            <div class="m-card bg-[#F4F7FF] p-5 rounded-2xl  ">
+
+                <div class="card-details flex flex-col gap-3">
+                 <small class="bg-white px-2 py-1 w-20 rounded-sm">ShopEase</small>
+                 <h2 class="font-bold text-xl text-[#00303C]">Fix Mobile Button Issue </h2>
+               <div class="bg-white px-4 py-3 rounded-sm text-start">
+                <p class="text-sm text-[#808384] ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properlyand ensure onClick works properly</p>
+               </div>
+                </div>
+     
+                <div class="card-bottom flex justify-between items-center mt-5">
+                 <div class="date">
+                     <small class="text-[#00303C]">Deadline</small>
+                     <p class="font-semibold text-[#00303C] text-sm">21 March 2025</p>
+                 </div>
+
+                 <div class="btn-com">
+                    <button class="bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer text-lg">Completed</button>
+                 </div>
+                </div>
+     
+                 </div>
+            <div class="m-card bg-[#F4F7FF] p-5 rounded-2xl  ">
+
+                <div class="card-details flex flex-col gap-3">
+                 <small class="bg-white px-2 py-1 w-20 rounded-sm">ShopEase</small>
+                 <h2 class="font-bold text-xl text-[#00303C]">Fix Mobile Button Issue </h2>
+               <div class="bg-white px-4 py-3 rounded-sm text-start">
+                <p class="text-sm text-[#808384] ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properlyand ensure onClick works properly</p>
+               </div>
+                </div>
+     
+                <div class="card-bottom flex justify-between items-center mt-5">
+                 <div class="date">
+                     <small class="text-[#00303C]">Deadline</small>
+                     <p class="font-semibold text-[#00303C] text-sm">21 March 2025</p>
+                 </div>
+
+                 <div class="btn-com">
+                    <button class="bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer text-lg">Completed</button>
+                 </div>
+                </div>
+     
+                 </div>
+            <div class="m-card bg-[#F4F7FF] p-5 rounded-2xl  ">
+
+                <div class="card-details flex flex-col gap-3">
+                 <small class="bg-white px-2 py-1 w-20 rounded-sm">ShopEase</small>
+                 <h2 class="font-bold text-xl text-[#00303C]">Fix Mobile Button Issue </h2>
+               <div class="bg-white px-4 py-3 rounded-sm text-start">
+                <p class="text-sm text-[#808384] ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properlyand ensure onClick works properly</p>
+               </div>
+                </div>
+     
+                <div class="card-bottom flex justify-between items-center mt-5">
+                 <div class="date">
+                     <small class="text-[#00303C]">Deadline</small>
+                     <p class="font-semibold text-[#00303C] text-sm">21 March 2025</p>
+                 </div>
+
+                 <div class="btn-com">
+                    <button class="bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer text-lg">Completed</button>
+                 </div>
+                </div>
+     
+                 </div>
+            <div class="m-card bg-[#F4F7FF] p-5 rounded-2xl  ">
+
+                <div class="card-details flex flex-col gap-3">
+                 <small class="bg-white px-2 py-1 w-20 rounded-sm">ShopEase</small>
+                 <h2 class="font-bold text-xl text-[#00303C]">Fix Mobile Button Issue </h2>
+               <div class="bg-white px-4 py-3 rounded-sm text-start">
+                <p class="text-sm text-[#808384] ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properlyand ensure onClick works properly</p>
+               </div>
+                </div>
+     
+                <div class="card-bottom flex justify-between items-center mt-5">
+                 <div class="date">
+                     <small class="text-[#00303C]">Deadline</small>
+                     <p class="font-semibold text-[#00303C] text-sm">21 March 2025</p>
+                 </div>
+
+                 <div class="btn-com">
+                    <button class="bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer text-lg">Completed</button>
+                 </div>
+                </div>
+     
+                 </div>
+    
+          </div>
+
+
+
+        </section>
+      </div>
+
+      <!-- activity sidebar -->
+      <div class="col-span-1 row-span-4 bg-white mt-2 p-7 rounded-2xl mb-10">
+        <div class=" activity-header flex flex-col gap-5 justify-center items-center">
+            <div class="flex justify-center items-center gap-3">
+                <img src="./assets/activity.png" alt="">
+                <p class="text-lg font-semibold text-[#00303C]">Activity Log</p>
+            </div>
+
+            <div>
+                <button class="bg-blue-700 px-4 py-2 rounded-lg text-white">Clear History</button>
+            </div>
+        </div>
+
+        <div class="activity-card flex justify-center items-center mt-8">
+            <div class="bg-[#F4F7FF] w-52  px-2 py-2 rounded-xl ">
+                <p class="text-sm text-[#00303C]">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+        </div>
+        <div class="activity-card flex justify-center items-center mt-8">
+            <div class="bg-[#F4F7FF] w-52  px-2 py-2 rounded-xl ">
+                <p class="text-sm text-[#00303C]">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+        </div>
+        <div class="activity-card flex justify-center items-center mt-8">
+            <div class="bg-[#F4F7FF] w-52  px-2 py-2 rounded-xl ">
+                <p class="text-sm text-[#00303C]">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
